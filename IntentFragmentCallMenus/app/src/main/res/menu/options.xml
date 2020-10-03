@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/external"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Open External Activity" />
+
+    <item
+        android:id="@+id/anotherAcivity"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Open Another Activity">
+    </item>
+
+    <item
+        android:id="@+id/frag"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Open Fragment">
+    </item>
+
+    <item
+        android:id="@+id/call"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Call Emergency No.:98765">
+    </item>
+
+</menu>

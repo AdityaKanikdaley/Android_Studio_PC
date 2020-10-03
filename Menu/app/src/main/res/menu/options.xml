@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cse"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"
+        android:title="CSE" />
+
+    <item
+        android:id="@+id/ece"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="ECE">
+    </item>
+
+    <item
+        android:id="@+id/mechanical"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Mechanical">
+    </item>
+
+    <item
+        android:id="@+id/civil"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Civil">
+    </item>
+
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="never"
+        android:title="Exit">
+    </item>
+
+</menu>

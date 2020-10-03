@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mad"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"
+        android:title="MAD" />
+
+    <item
+        android:id="@+id/python"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"
+        android:title="Python">
+    </item>
+
+    <item
+        android:id="@+id/ds"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Data Structure">
+    </item>
+
+    <item
+        android:id="@+id/algo"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never"
+        android:title="Algorithm">
+    </item>
+
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="never"
+        android:title="Exit">
+    </item>
+
+</menu>

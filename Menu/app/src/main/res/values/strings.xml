@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="cse">CSE</string>
+    <string name="exiting">exit</string>
+    <string name="exit">exit</string>
+    <string name="civil">civil</string>
+    <string name="mechanical">mechanical</string>
+    <string name="ece">ece</string>
+    <string name="ECE">ECE</string>
+    <string name="Mechanical">M</string>
+</resources>
