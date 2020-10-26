@@ -27,18 +27,24 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     EditText editText;
-    ImageView image, photo;
+    ImageView image, photo, update;
     ListView lv;
     message msg;
     private final int PICK_IMAGE_REQUEST = 22;
     ArrayList<String> msglist;
     ArrayAdapter<String> adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        getSupportActionBar().hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         lv=(ListView)findViewById(R.id.listView);
         photo=(ImageView)findViewById(R.id.photo);
+        update=(ImageView)findViewById(R.id.update);
 
         msg=new message();
         msglist=new ArrayList<String>();
@@ -52,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot Snapshot) {
                 for(DataSnapshot ds:Snapshot.getChildren()){
-                    msglist.clear();
+
                     msg= ds.getValue(message.class);
                     msglist.add(msg.getName() + "\n" + msg.getMessage());
                 }lv.setAdapter(adapter);
@@ -74,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // on pressing update, update&delete will be called
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,delete.class);
+                startActivity(i);
+            }
+        });
 
         // realtime DB
         Firebase.setAndroidContext(this);

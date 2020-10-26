@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,6 +46,7 @@ public class delete extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         for(DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
                             dataSnapshot1.getRef().removeValue();
+                            Toast.makeText(getApplicationContext(),"Deleted!",Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -68,6 +70,7 @@ public class delete extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         for(DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
                             dataSnapshot1.getRef().child("message").setValue(t5.getText().toString());
+                            Toast.makeText(getApplicationContext(),"Deleted!",Toast.LENGTH_LONG).show();
                         }
                     }
 
