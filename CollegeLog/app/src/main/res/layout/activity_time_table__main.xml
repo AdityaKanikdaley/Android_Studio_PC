@@ -53,7 +53,8 @@
             android:gravity="center"
             android:background="@drawable/edit"
             android:textColor="@color/black"
-            android:hint="Enter   Course   Name" />
+            android:hint="Enter   Course   Name"
+            android:textColorHint="@color/endcolor"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp" />

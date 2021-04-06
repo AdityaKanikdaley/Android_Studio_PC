@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="startcolor">#494846</color>
     <color name="endcolor">#9A9997</color>
-    <color name="timetable">#3B4A97</color>
+    <color name="timetable">#282C34</color>
+    <color name="calculator">#3C3A3A</color>
+    <color name="green">#FF8BC34A</color>
+
 
 </resources>
