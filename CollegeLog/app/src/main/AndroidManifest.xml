@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Calculator"></activity>
+        <activity android:name=".about_page"></activity>
+        <activity android:name=".Calculator" />
         <activity android:name=".timeSlots" />
         <activity android:name=".timeTable_Main" />
         <activity

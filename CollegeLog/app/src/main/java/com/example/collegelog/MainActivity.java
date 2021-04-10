@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     Window window;
     Button button;
-    ImageView imageView;
+    ImageView calc, about;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         button = (Button)findViewById(R.id.timetableButton);
-        imageView = (ImageView) findViewById(R.id.calc_icon);
+        calc = (ImageView)findViewById(R.id.calc_icon);
+        about = (ImageView)findViewById(R.id.about_Icon);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +41,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent toCalc = new Intent(MainActivity.this, Calculator.class);
+                startActivity(toCalc);
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toCalc = new Intent(MainActivity.this, about_page.class);
                 startActivity(toCalc);
             }
         });
